@@ -1,9 +1,9 @@
-package = "kong-oidc"
+package = "kong-oidcrpt"
 version = "1.1.0-0"
 source = {
     url = "git://github.com/nokia/kong-oidc",
     tag = "v1.1.0",
-    dir = "kong-oidc"
+    dir = "kong-oidcrpt"
 }
 description = {
     summary = "A Kong plugin for implementing the OpenID Connect Relying Party (RP) functionality",
@@ -27,10 +27,10 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
-    ["kong.plugins.oidc.filter"] = "kong/plugins/oidc/filter.lua",
-    ["kong.plugins.oidc.handler"] = "kong/plugins/oidc/handler.lua",
-    ["kong.plugins.oidc.schema"] = "kong/plugins/oidc/schema.lua",
-    ["kong.plugins.oidc.session"] = "kong/plugins/oidc/session.lua",
-    ["kong.plugins.oidc.utils"] = "kong/plugins/oidc/utils.lua"
+    ["kong.plugins.oidcrpt.filter"] = "kong/plugins/oidcrpt/filter.lua",
+    ["kong.plugins.oidcrpt.handler"] = "kong/plugins/oidcrpt/handler.lua",
+    ["kong.plugins.oidcrpt.schema"] = "kong/plugins/oidcrpt/schema.lua",
+    ["kong.plugins.oidcrpt.session"] = "kong/plugins/oidcrpt/session.lua",
+    ["kong.plugins.oidcrpt.utils"] = "kong/plugins/oidcrpt/utils.lua"
     }
 }
